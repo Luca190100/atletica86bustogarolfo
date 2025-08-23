@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.I.S. Atletica 86</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azzurro: #007FFF;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f0f8ff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--azzurro);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      background-image: url('immagini/homepage.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 1rem;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons a {
+      background-color: var(--azzurro);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      margin: 0.25rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #005fbb;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: var(--azzurro);
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    footer {
+      background-color: var(--azzurro);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--azzurro);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      color: #005fbb;
+    }
+
+    .activity {
+      margin-bottom: 2rem;
+    }
+
+    .activity-title {
+      font-size: 1.75rem;
+      color: var(--azzurro);
+      margin-bottom: 1rem;
+    }
+
+    .activity-list {
+      list-style-type: disc;
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .activity-description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .activity-description em {
+      font-style: italic;
+      color: #555;
+    }
+
+    .activity-description strong {
+      font-weight: bold;
+    }
+
+    .social-icon img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .image-gallery img {
+      width: 30%;
+      border-radius: 10px;
+    }
+
+    .image-gallery {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>S.I.S. Atletica 86 - Busto Garolfo</h1>
+    <p>Promuoviamo l'atletica leggera dal 1986</p>
+  </header>
+
+  <nav>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#informazioni">Informazioni</a>
+    <a href="#modulistica">Modulistica</a>
+    <a href="#safeguarding">Safeguarding</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <main>
+    <section id="chi-siamo">
+      <h2>Chi siamo</h2>
+      <p>
+        <strong>Associazione sportiva dilettantistica S.I.S. Atletica 86 - Busto Garolfo</strong><br>
+        Ci occupiamo della promozione dell’atletica leggera in tutte le sue forme, offrendo un ambiente formativo e stimolante per bambini, ragazzi e adulti.<br>Attraverso un percorso graduale, accompagniamo gli atleti nella scoperta delle diverse discipline dell’atletica, con l’obiettivo di sviluppare le capacità motorie, la passione per lo sport e, per chi lo desidera, la preparazione all’attività agonistica.<br>Organizziamo allenamenti strutturati, attività ludico-sportive e occasioni di crescita sportiva che valorizzano l’impegno, la costanza e lo spirito di squadra.
+      </p>
+
+      <h3>Orari:</h3>
+      <p>Lunedì – Mercoledì – Venerdì dalle 17.00 alle 19.15</p>
+
+      <h3>Dove ci trovi:</h3>
+      <p>Ti aspettiamo presso la nuova pista di atletica al campo sportivo comunale “Roberto Battaglia” di Busto Garolfo o nella adiacente palestra delle scuole medie Caccia.<br>Via Benvenuto Cellini 22, Busto Garolfo (MI) 20038</p>
+
+      <div class="image-gallery">
+        <img src="img/allenamento_2.jpg" alt="Foto gruppo">
+        <img src="img/allenamento_4.jpg" alt="Foto gruppo">
+        <img src="img/allenamento_3.jpg" alt="Foto gruppo">
+        <img src="img/allenamento_5.jpg" alt="Foto gruppo">
+        <img src="img/allenamento_1.jpg" alt="Foto gruppo">
+        <img src="img/allenamento_6.jpg" alt="Foto gruppo">
+      </div>
+    </section>
+
+    <section id="informazioni">
+      <h2>Informazioni</h2>
+
+      <h3>Attività ludica di avviamento all’atletica leggera</h3>
+      <ul>
+        <li>Esordienti (8/9/10 anni)</li>
+      </ul>
+      <p>
+        Attività a carattere ludico di avviamento all’atletica leggera che offre un’opportunità entusiasmante ai più piccoli per appassionarsi al mondo dello sport divertendosi.<br>
+        <em>Lunedì e mercoledì dalle 17.30 alle 18.30</em><br><br>
+        <strong>Costo annuale:</strong> 190€, comprensivo di tesseramento (FIDAL) e maglietta della società.<br>
+        <strong>Sconto fratelli:</strong> 95€
+      </p>
+
+      <h3>Allenamenti in preparazione all’attività agonistica</h3>
+      <ul>
+        <li>Ragazzi/e (11/12 anni)</li>
+        <li>Cadetti/e (13/14 anni)</li>
+        <li>Categorie assolute (15+ anni)</li>
+      </ul>
+      <p>
+        Attività che ti permette di scoprire tutto il tuo potenziale, sviluppare le tue abilità atletiche e partecipare ad emozionanti competizioni in un ambiente accogliente e motivante.<br>
+        <em>Lunedì, mercoledì e venerdì dalle 17.30 alle 19.15</em><br><br>
+        <strong>Costo annuale:</strong> 190€, comprensivo di tesseramento (FIDAL) e maglietta della società.<br>
+        <strong>Sconto fratelli:</strong> 95€
+      </p>
+
+      <h3>Attività Master</h3>
+      <p>
+        Allenamenti guidati con possibilità di tabelle personalizzate.<br>Per podisti amatoriali che praticano attività agonistica e non.<br>
+        <em>Lunedì, mercoledì e venerdì dalle 17.30 alle 19.15</em><br><br>
+        <strong>Costo annuale:</strong> 95€, comprensivo di tesseramento (FIDAL) e maglietta della società.
+      </p>
+    </section>
+
+    <section id="modulistica">
+      <h2>Modulistica</h2>
+      <ul>
+        <li><a href="moduli/modulo_iscrizione_2025-26.pdf" target="_blank">Modulo di iscrizione 2025-26</a></li>
+        <li><a href="moduli/modulo_iscrizione_master_2025-26.pdf" target="_blank">Modulo di iscrizione master 2025-26</a></li>
+        <li><a href="moduli/informativa_privacy_atleti_minorenni.pdf" target="_blank">Informativa privacy atleti minorenni</a></li>
+        <li><a href="moduli/informativa_privacy_atleti_maggiorenni.pdf" target="_blank">Informativa privacy atleti maggiorenni</a></li>
+        <li><a href="moduli/informativa_EX_articolo_13.pdf" target="_blank">Informativa EX articolo 13</a></li>
+        <li><a href="moduli/richiesta_tesseramento_atleta_ESO_RAG_CAD.pdf" target="_blank">Richiesta tesseramento atleta ESO RAG CAD</a></li>
+        <li><a href="moduli/richiesta_tesseramento_atleta_ALL_JUN_PRO_SEN.pdf" target="_blank">Richiesta tesseramento atleta ALL JUN PRO SEN</a></li>
+      </ul>
+    </section>
+
+    <section id="safeguarding">
+      <h2>Safeguarding</h2>
+      <p>Informazioni sulla tutela dei minori:<br><br>
+        <strong>Responsabile:</strong> Nardo Stefano<br>
+        <strong>Email:</strong> <a href="mailto:safeguarding.atletica86@gmail.com">safeguarding.atletica86@gmail.com</a>
+      </p>
+      <ul>
+        <li><a href="moduli/modello_organizzativo_e_di_controllo_dell'attività_sportiva.pdf" target="_blank">Modello organizzativo e di controllo dell'attività sportiva</a></li>
+        <li><a href="moduli/codici_di_condotta_a_tutela_dei_minori.pdf" target="_blank">Codici di condotta a tutela dei minori</a></li>
+      </ul>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>Email: <a href="mailto:MI354@fidal.it">MI354@fidal.it</a><br>
+      Telefono: <a href="tel:3293875039">329 387 5039</a></p>
+
+      <h3>Seguici su Instagram</h3>
+      <a href="https://www.instagram.com/s.i.s_atletica86/" target="_blank" class="social-icon">
+        <img src="img/instagram.png" alt="Instagram"> @s.i.s_atletica86
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+    <p>Associazione sportiva dilettantistica S.I.S. Atletica 86</p>
+    <p>Via Benvenuto Cellini, 22 - 20038 Busto Garolfo (MI)</p>
+    <p>Tel.: 329 387 5039</p>
+    <p>Email: <a href="mailto:MI354@fidal.it">MI354@fidal.it</a></p>
+    <p>&copy; S.I.S. Atletica 86 - Tutti i diritti riservati.</p>
+  </div>
+  </footer>
+
+</body>
+</html>

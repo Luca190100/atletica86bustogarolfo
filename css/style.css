@@ -1,0 +1,165 @@
+:root {
+  --azzurro: #007FFF;
+  --azzurro-scuro: #005fbf;
+  --bianco: #ffffff;
+  --grigio-chiaro: #f8f9fa;
+  --nero: #222;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--grigio-chiaro);
+  color: var(--nero);
+}
+
+header {
+  background-color: var(--azzurro);
+  color: var(--bianco);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: var(--azzurro-scuro);
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--bianco);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  background: var(--bianco);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: var(--azzurro);
+  color: var(--bianco);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer a {
+  color: var(--bianco);
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('immagini/homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  background-color: var(--azzurro);
+  color: var(--bianco);
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.hero-buttons a:hover {
+  background-color: var(--azzurro-chiaro);
+}
+
+@media (max-width: 768px) {
+  /* Ridurre la dimensione dei titoli nella sezione Hero */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Ridurre la dimensione del testo della descrizione nella Hero */
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  /* Rendere le immagini della galleria a larghezza piena */
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Cambiare la disposizione dei link di navigazione per mobile */
+  nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  /* Ridurre la dimensione del testo per le sezioni */
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  /* Modificare la spaziatura per le sezioni */
+  .section {
+    padding: 1.5rem;
+  }
+
+  /* Modificare la visualizzazione dei pulsanti nella Hero */
+  .hero-buttons a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Ridurre la dimensione del footer */
+  footer p {
+    font-size: 0.9rem;
+  }
+}
