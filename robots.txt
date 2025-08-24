@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atletica86bustogarolfo.com/sitemap.xml
